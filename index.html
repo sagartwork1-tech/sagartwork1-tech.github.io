@@ -5,48 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagar Tarone | Portfolio</title>
-    <meta name="description" content="Sagar Tarone, AI engineering student ka portfolio">
+    <meta name="description"
+        content="Portfolio of Sagar Tarone, an engineering student aspiring to become an AI engineer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-    </nav>
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a href="index.html" class="brand">
+                <span class="brand-dot"></span>
+                <span>Sagar Tarone</span>
+            </a>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+            </nav>
+        </div>
+    </header>
 
-    <img src="images/sagarphoto.jpeg.jpeg" alt="Sagar ki photo" class="profile">
+    <main class="container">
 
-    <h1>Hi, main Sagar Umesh Tarone hu</h1>
-    <p>Main ek engineering student hu aur AI engineer banna chahta hu.</p>
-    <a href="resume.pdf" download class="btn">Resume download karo</a>
+        <section class="hero">
+            <div class="hero-text">
+                <div class="eyebrow">
+                    <span class="status-pulse"></span>
+                    <span>Engineering Student &bull; Aspiring AI Engineer</span>
+                </div>
+                <h1>Hi, I'm <span class="highlight">Sagar Umesh Tarone</span></h1>
+                <p>I'm an engineering student working toward a career as an AI engineer. I enjoy building websites,
+                    mastering algorithms, and exploring modern AI systems.</p>
+                <div class="hero-actions">
+                    <a href="projects.html" class="btn">View Projects &rarr;</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="profile-frame">
+                <img src="images/sagarphoto.jpeg.jpeg" alt="Portrait of Sagar Tarone" class="profile">
+            </div>
+        </section>
 
-    <h2 id="skills">Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>DSA</li>
-        <li>HTML / CSS</li>
-    </ul>
+        <section class="section" id="skills">
+            <h2>Technical Skills</h2>
+            <ul class="chips">
+                <li><span class="chip-dot"></span>Python</li>
+                <li><span class="chip-dot"></span>Data Structures &amp; Algorithms</li>
+                <li><span class="chip-dot"></span>HTML5</li>
+                <li><span class="chip-dot"></span>CSS3</li>
+                <li><span class="chip-dot"></span>Git &amp; GitHub</li>
+                <li><span class="chip-dot"></span>Problem Solving</li>
+            </ul>
+        </section>
 
-    <h2 id="projects">Projects</h2>
+        <section class="section" id="projects">
+            <div class="section-header">
+                <h2>Featured Project</h2>
+                <a href="projects.html" class="view-all-link">All Projects &rarr;</a>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-badge">Web Development</div>
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio built from scratch with clean semantic HTML and modern CSS,
+                        deployed on GitHub Pages.</p>
+                    <ul class="tags">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>GitHub Pages</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                    <div class="card-links">
+                        <a href="https://sagartwork1-tech.github.io" target="_blank" rel="noopener">Live site
+                            &nearr;</a>
+                        <a href="https://github.com/sagartwork1-tech/sagartarone.github.io" target="_blank"
+                            rel="noopener">Source code &nearr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>HTML aur CSS se banayi meri pehli website.</p>
-        <a href="https://github.com/sagartwork1-tech/sagartarone.github.io" target="_blank" rel="noopener">Code
-            dekho</a>
-    </div>
+        <section class="section" id="contact">
+            <h2>Get in Touch</h2>
+            <p class="section-desc">Have an internship opportunity, project collaboration, or question? Feel free to
+                reach out directly.</p>
+            <div class="contact-grid">
+                <a href="mailto:sagar.twork1@email.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">sagar.twork1@email.com</span>
+                    </div>
+                </a>
+                <a href="https://github.com/sagartwork1-tech" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/sagartwork1-tech</span>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/sagar-tarone" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/sagar-tarone</span>
+                    </div>
+                </a>
+            </div>
+        </section>
 
-    <h2 id="contact">Contact</h2>
-    <p>Email: <a href="mailto:sagar.twork1@email.com">sagar.twork1@email.com</a></p>
-    <p>GitHub: <a href="https://github.com/sagartwork1-tech" target="_blank"
-            rel="noopener">github.com/sagartwork1-tech</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/sagar-tarone" target="_blank"
-            rel="noopener">linkedin.com/in/sagar-tarone</a></p>
+    </main>
 
-    <footer>© 2026 Sagar Tarone</footer>
+    <footer class="site-footer">
+        <p>© 2026 Sagar Umesh Tarone &bull; Aspiring AI Engineer</p>
+    </footer>
 
 </body>
 

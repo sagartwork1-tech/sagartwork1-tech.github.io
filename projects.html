@@ -4,36 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects | Sagar Tarone</title>
+    <meta name="description" content="Projects built by Sagar Tarone while learning web development and AI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-    </nav>
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a href="index.html" class="brand">
+                <span class="brand-dot"></span>
+                <span>Sagar Tarone</span>
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html" class="active">Projects</a>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Mere Projects</h1>
+    <main class="container">
 
-    <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>HTML aur CSS se banayi meri pehli website.</p>
-        <a href="https://github.com/sagartwork1-tech/sagartarone.github.io" target="_blank" rel="noopener">Code
-            dekho</a>
-    </div>
+        <div class="page-title">
+            <div class="eyebrow">
+                <span class="status-pulse"></span>
+                <span>Portfolio &amp; Work</span>
+            </div>
+            <h1>Projects</h1>
+            <p class="subtitle">A curated selection of software and web projects I've built</p>
+        </div>
 
-    <div class="card">
-        <h3>To-Do App</h3>
-        <p>Jald hi aa raha hai...</p>
-    </div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-badge">Live Project</div>
+                <h3>Portfolio Website</h3>
+                <p>A fast, responsive, and accessible personal portfolio designed and built from scratch using clean semantic HTML and modern CSS, hosted on GitHub Pages.</p>
+                <ul class="tags">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>GitHub Pages</li>
+                    <li>Responsive Design</li>
+                </ul>
+                <div class="card-links">
+                    <a href="https://sagartwork1-tech.github.io" target="_blank" rel="noopener">Live site &nearr;</a>
+                    <a href="https://github.com/sagartwork1-tech/sagartarone.github.io" target="_blank"
+                        rel="noopener">Source code &nearr;</a>
+                </div>
+            </div>
 
-    <div class="card">
-        <h3>Weather App</h3>
-        <p>Jald hi aa raha hai...</p>
-    </div>
+            <div class="card card-placeholder">
+                <div class="placeholder-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <h3>Upcoming AI &amp; Software Work</h3>
+                <p>I am actively developing new projects in Python algorithms, data structures, and AI agents. As new applications are completed, they will be launched here.</p>
+                <div class="card-links">
+                    <a href="https://github.com/sagartwork1-tech" target="_blank" rel="noopener">Explore GitHub &nearr;</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Sagar Umesh Tarone &bull; Aspiring AI Engineer</p>
+    </footer>
 
 </body>
 
